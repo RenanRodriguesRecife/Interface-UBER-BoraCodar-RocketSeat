@@ -131,3 +131,57 @@ body{
     line-height: 28px;
     color: #37203B;  
 }
+
+/* card-footer */
+.card-footer{
+    gap:32px;
+    align-items: center;
+
+}
+
+.input-wrapper{
+    background: #F5EDF7;
+    border-radius: 24px;
+
+    height: 64px;
+    flex: 3;
+    align-items: center;
+    padding: 0 32px;
+}
+
+
+/* screen read only class - para os leitores de tela ler o que está dentro do input */
+
+.input-wrapper label{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border-width: 0;
+    white-space:nowrap;
+}
+
+.input-wrapper input{
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color:#372038;
+}
+
+.input-wrapper input:focus{
+    outline: 0;
+}
+
+.input-wrapper:focus-within{
+    outline: 3px solid black;
+}
+
+.card-footer .ph-fill{
+    font-size: 56px;
+}
